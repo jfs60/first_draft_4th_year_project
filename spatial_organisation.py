@@ -92,7 +92,6 @@ def spatial_organisation_line(mask, image, horizontal_line, vertical_line):
 
     l_values_include_phi = l_values*phi_values
     r_values_include_phi = r_values*phi_values
-    print(l_values_include_phi)
 
     label = horizontal_line
     label_1 = vertical_line
@@ -232,7 +231,6 @@ def spatial_organisation_along_length (mask, image):
     l_values_include_phi = l_values*phi_values
     r_values_include_phi = r_values*phi_values
 
-    print(l_values_include_phi)
     max_l = np.max(l_values_include_phi)
     min_l = np.min(l_values_include_phi)
     label_1 = np.arange(0, max_l, 4) 
